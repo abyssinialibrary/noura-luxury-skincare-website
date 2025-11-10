@@ -1,0 +1,22 @@
+/* app/globals.css */
+
+/* 1. Google Fonts @import MUST be the very first thing in the file */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sora:wght@100..800&display=swap');
+
+/* 2. Then come the Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3. After that, you can add any other global custom styles */
+
+html, body {
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevent horizontal scroll from animations */
+}
+
+body {
+  /* Using CSS variables for consistency and proper application of your brand fonts and colors */
+  font-family: var(--font-inter), sans-serif;
+  color: var(--nour-dark-text);
+}
