@@ -25,7 +25,7 @@ export default function ShopPage() {
     },
     {
       id: 2,
-      imageSrc: '/brand-assets/nour-float-2.jpg',
+      imageSrc: '/brand-assets/nour-float-3.jpg',
       title: 'Balancing Cleansing Oil',
       price: 'birr 48.00',
       shortDescription: 'Gently purifies, maintains skin harmony.',
@@ -35,7 +35,7 @@ export default function ShopPage() {
     },
     {
       id: 3,
-      imageSrc: '/brand-assets/nour-float-3.jpg',
+      imageSrc: '/brand-assets/nour-night-cream.jpg',
       title: 'Replenishing Night Cream',
       price: 'birr 72.00',
       shortDescription: 'Restorative care for overnight renewal.',
@@ -45,7 +45,7 @@ export default function ShopPage() {
     },
     {
       id: 4,
-      imageSrc: '/brand-assets/nour-float-1.jpg',
+      imageSrc: '/brand-assets/hydration-mist.jpg',
       title: 'Pure Hydration Mist',
       price: 'birr 35.00',
       shortDescription: 'A refreshing veil of moisture, revitalizes instantly.',
@@ -55,7 +55,7 @@ export default function ShopPage() {
     },
     {
       id: 5,
-      imageSrc: '/brand-assets/nour-float-2.jpg',
+      imageSrc: '/brand-assets/exfoliating-polish.jpg',
       title: 'Gentle Exfoliating Polish',
       price: 'birr 55.00',
       shortDescription: 'Refine and renew for a smooth canvas.',
@@ -65,7 +65,7 @@ export default function ShopPage() {
     },
     {
       id: 6,
-      imageSrc: '/brand-assets/nour-float-3.jpg',
+      imageSrc: '/brand-assets/eye-concentrate.jpg',
       title: 'Radiant Eye Concentrate',
       price: 'birr 88.00',
       shortDescription: 'Brightens and revitalizes delicate eyes.',
@@ -76,7 +76,7 @@ export default function ShopPage() {
     // Adding more fictional products to fill the shop
     {
       id: 7,
-      imageSrc: '/brand-assets/nour-float-1.jpg',
+      imageSrc: '/brand-assets/face-elixir.jpg',
       title: 'Botanical Face Elixir',
       price: 'birr 95.00',
       shortDescription: 'A luxurious oil blend for deep nourishment.',
@@ -86,7 +86,7 @@ export default function ShopPage() {
     },
     {
       id: 8,
-      imageSrc: '/brand-assets/nour-float-2.jpg',
+      imageSrc: '/brand-assets/sun-shield.jpg',
       title: 'Mineral Sun Shield SPF 30',
       price: 'birr 42.00',
       shortDescription: 'Lightweight, broad-spectrum sun protection.',
@@ -96,7 +96,7 @@ export default function ShopPage() {
     },
     {
       id: 9,
-      imageSrc: '/brand-assets/nour-float-3.jpg',
+      imageSrc: '/brand-assets/clay-purifying-mask.jpg',
       title: 'Clay Purifying Mask',
       price: 'birr 38.00',
       shortDescription: 'Detoxify and refine pores naturally.',
@@ -106,7 +106,7 @@ export default function ShopPage() {
     },
     {
       id: 10,
-      imageSrc: '/brand-assets/nour-float-1.jpg',
+      imageSrc: '/brand-assets/lip-eye-balm.jpg',
       title: 'Lip & Eye Balm',
       price: 'birr 28.00',
       shortDescription: 'Targeted hydration for delicate areas.',
