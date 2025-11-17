@@ -39,7 +39,7 @@ export default function Footer() {
               Kinder world with <br /> NOURA.
             </h3>
             <p className="font-sans text-sm opacity-70 max-w-xs mx-auto lg:mx-0">
-              *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease.
+              NOURA – a philosophy rooted in calm, clarity, and nourishment, bringing together natural products and modern rituals.
             </p>
           </div>
 
@@ -59,10 +59,10 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <h4 className="font-sans text-lg font-semibold text-nour-terracotta-gold mb-4">Social</h4>
             <ul className="space-y-2">
-              <li><AnimatedExternalLink href="https://www.instagram.com/yournourabrand">Instagram</AnimatedExternalLink></li>
-              <li><AnimatedExternalLink href="https://www.facebook.com/yournourabrand">Facebook</AnimatedExternalLink></li>
-              <li><AnimatedExternalLink href="https://www.tiktok.com/@yournourabrand">TikTok</AnimatedExternalLink></li>
-              <li><AnimatedExternalLink href="https://www.linkedin.com/company/yournourabrand">LinkedIn</AnimatedExternalLink></li>
+              <li><AnimatedExternalLink href="https://www.instagram.com/bereketdesigns">Instagram</AnimatedExternalLink></li>
+              <li><AnimatedExternalLink href="https://www.facebook.com/bereketdesigns">Facebook</AnimatedExternalLink></li>
+              <li><AnimatedExternalLink href="https://www.tiktok.com/@bereketdesigns">TikTok</AnimatedExternalLink></li>
+              <li><AnimatedExternalLink href="https://www.linkedin.com/company/bereketdesigns">LinkedIn</AnimatedExternalLink></li>
             </ul>
           </div>
 
@@ -70,7 +70,7 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <h4 className="font-sans text-lg font-semibold text-nour-terracotta-gold mb-4">Info</h4>
             <ul className="space-y-2">
-              <li><AnimatedExternalLink href="mailto:hello@yournourabrand.com">hello@yournourabrand.com</AnimatedExternalLink></li>
+              <li><AnimatedExternalLink href="mailto:hello@bereketdesigns.com">E-mail Us</AnimatedExternalLink></li>
             </ul>
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function Footer() {
           <ul className="flex justify-center md:justify-end space-x-6 text-sm">
             <li><AnimatedLink href="/privacy-policy" className="small">Privacy Policy</AnimatedLink></li>
             <li><AnimatedLink href="/terms-of-use" className="small">Terms of Service</AnimatedLink></li>
-            <li><AnimatedExternalLink href="https://nika.agency/?utm_source=NOURA&utm_medium=footer_link&utm_campaign=website_build" className="small">Site by Nika</AnimatedExternalLink></li>
+            <li><AnimatedExternalLink href="https://t.me/Arkeondesigns" className="small">Site by Arkeon</AnimatedExternalLink></li>
           </ul>
         </div>
       </div>
