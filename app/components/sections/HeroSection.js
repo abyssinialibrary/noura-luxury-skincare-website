@@ -1,4 +1,4 @@
-// components/sections/HeroSection.js
+// app/components/sections/HeroSection.js
 'use client';
 
 import Image from 'next/image';
@@ -23,24 +23,7 @@ export default function HeroSection() {
         duration: 1.5,
         scale: 1.1,
       });
-      gsap.from(productImageRef.current, {
-        opacity: 10,
-        y: 50, // Start slightly below
-        scale: 0.9, // Start slightly smaller
-        ease: "power3.out",
-        duration: 1.5,
-        delay: 0.3, // Image appears slightly after text
-      });
 
-      // Subtle Floating Animation for the product image (continues until scroll trigger starts)
-      gsap.to(productImageRef.current, {
-        y: -10, // Move up by 10px
-        duration: 3,
-        ease: "power1.inOut",
-        repeat: -1, // Infinite repeat
-        yoyo: true, // Go back and forth
-        paused: true, // Start paused, let the initial from() tween finish
-      });
 
       // Scroll-Triggered Animation: Text slides up, Image slides down and shrinks
       ScrollTrigger.create({
@@ -66,10 +49,10 @@ export default function HeroSection() {
         },
         animation: gsap.timeline()
           .to(nouraTextRef.current, {
-            y: -100, // NOURA text slides up significantly
-            x: 900,
+            y: 3000, // NOURA text slides up significantly
+            x: -9999,
             opacity: 1, // Fades out slightly
-            scale: 100, // Shrinks a bit as it goes up
+            scale: 200, // Shrinks a bit as it goes up
             ease: "power2.out",
           }, 0) // Start at the same time as other tweens in this timeline
           .to(productImageRef.current, {
@@ -85,35 +68,29 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section ref={comp} className="relative w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-nour-bone-white to-nour-soft-neutral overflow-hidden">
-      {/* Background radial gradient */}
-      <div className="absolute inset-0 z-0 flex items-center justify-center">
-        <div className="radial-gradient-circle absolute w-[80vw] h-[80vw] max-w-2xl max-h-2xl rounded-full bg-nour-terracotta-gold opacity-10 blur-3xl lg:w-[60vw] lg:h-[60vw]"></div>
+    <section ref={comp} className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/brand-assets/hero-background.jpg" // <<< IMPORTANT: REPLACE THIS PATH with your actual new background image
+          alt="NOURA Skincare Background"
+          fill
+          sizes="100vw"
+          className="object-cover"
+          priority // Load with high priority for LCP
+        />
       </div>
 
-      {/* Main content container for centering */}
-      <div className="relative flex items-center justify-center w-full h-full p-4 md:p-8 lg:p-12">
-        {/* NOURA Text - Positioned behind the image */}
+      <div className="absolute inset-0 z-10 flex items-center justify-center">
+      </div>
+
+      <div className="relative flex items-center justify-center w-full h-full p-4 md:p-8 lg:p-12 z-20">
         <h1
           ref={nouraTextRef}
-          className="absolute font-serif text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] font-bold text-nour-deep-olive opacity-20 select-none z-10 whitespace-nowrap pointer-events-none"
-          style={{ transformOrigin: 'center center' }} // Ensure scale animates from center
+          className="absolute font-serif text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] font-bold text-nour-bone-white opacity-100 select-none z-30 whitespace-nowrap pointer-events-none" // Increased z-index to be above floating product image
+          style={{ transformOrigin: 'center center' }}
         >
           NOURA
         </h1>
-
-        {/* Product Image - Positioned in front */}
-        <div className="relative z-20 w-full max-w-xs md:max-w-sm lg:max-w-md h-auto flex items-center justify-center">
-          <Image
-            ref={productImageRef}
-            src="/brand-assets/luxury-skincare-product.png"
-            alt="NOURA Luxury Skincare Product"
-            width={500}
-            height={500}
-            priority
-            className="w-full h-auto object-contain drop-shadow-xl"
-          />
-        </div>
       </div>
     </section>
   );

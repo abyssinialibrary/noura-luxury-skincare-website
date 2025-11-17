@@ -14,6 +14,8 @@ module.exports = {
         'nour-soft-neutral': '#E0E0E0', // Another soft neutral
         'nour-dark-text': '#2D2D2D', // Your deep, rich text color
         'nour-primary-blue': '#4949E9', // Keeping this from original for logo icon color
+        'nour-dark': '#1b1b1dff', // Keeping this from original for logo icon color
+
       },
       fontFamily: {
         'sans': ['var(--font-inter)', 'sans-serif'], // Primary typeface: clean geometric sans-serif

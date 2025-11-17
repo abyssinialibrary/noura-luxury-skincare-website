@@ -16,7 +16,7 @@ html, body {
 }
 
 body {
-  /* Using CSS variables for consistency and proper application of your brand fonts and colors */
   font-family: var(--font-inter), sans-serif;
   color: var(--nour-dark-text);
+  background-color: var(--nour-bone-white); /* Ensure default is bone-white */
 }

@@ -1,36 +1,38 @@
 // components/ui/SplitText.js
-'use client'; // This component will manipulate the DOM, so it needs to be a client component
+'use client';
 
 import { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { SplitText as GSAPSplitText } from 'gsap/SplitText'; // Renamed to avoid conflict
+import { SplitText as GSAPSplitText } from 'gsap/SplitText';
 import { useGSAP } from '@gsap/react';
 
-// Register plugins if they haven't been globally registered (good practice to ensure)
-gsap.registerPlugin(ScrollTrigger, GSAPSplitText, useGSAP);
+// No need to register plugins here if already registered globally in GSAPProvider,
+// but keeping it here as a fallback and for component self-sufficiency.
+// However, to prevent double registration, we can comment it out IF GSAPProvider is reliable.
+// For now, let's keep it in case.
+// gsap.registerPlugin(ScrollTrigger, GSAPSplitText, useGSAP);
 
 const SplitText = ({
   text,
   className = '',
-  delay = 100, // Stagger delay per character/word in milliseconds
-  duration = 0.6, // Duration for each character/word animation
+  delay = 100,
+  duration = 0.6,
   ease = 'power3.out',
-  splitType = 'chars', // 'chars', 'words', 'lines', or combination e.g., 'chars,words'
+  splitType = 'chars',
   from = { opacity: 0, y: 40 },
   to = { opacity: 1, y: 0 },
-  threshold = 0.1, // ScrollTrigger threshold
-  rootMargin = '-100px', // ScrollTrigger rootMargin
+  threshold = 0.1,
+  rootMargin = '-100px',
   textAlign = 'center',
-  tag = 'p', // HTML tag to render
-  onLetterAnimationComplete // Callback when animation completes
+  tag = 'p',
+  onLetterAnimationComplete
 }) => {
   const ref = useRef(null);
   const animationCompletedRef = useRef(false);
   const [fontsLoaded, setFontsLoaded] = useState(false);
 
   useEffect(() => {
-    // Check if fonts are already loaded or wait for them
     if (document.fonts.status === 'loaded') {
       setFontsLoaded(true);
     } else {
@@ -45,7 +47,6 @@ const SplitText = ({
       if (!ref.current || !text || !fontsLoaded) return;
       const el = ref.current;
 
-      // Revert previous SplitText instance if it exists to prevent duplicates
       if (el._rbsplitInstance) {
         try {
           el._rbsplitInstance.revert();
@@ -55,7 +56,6 @@ const SplitText = ({
         el._rbsplitInstance = null;
       }
 
-      // Calculate ScrollTrigger start position
       const startPct = (1 - threshold) * 100;
       const marginMatch = /^(-?\d+(?:\.\d+)?)(px|em|rem|%)?$/.exec(rootMargin);
       const marginValue = marginMatch ? parseFloat(marginMatch[1]) : 0;
@@ -68,12 +68,12 @@ const SplitText = ({
             : `+=${marginValue}${marginUnit}`;
       const start = `top ${startPct}%${sign}`;
 
-      let targets; // Elements to animate (chars, words, or lines)
+      let targets;
       const assignTargets = self => {
         if (splitType.includes('chars') && self.chars.length) targets = self.chars;
         if (!targets && splitType.includes('words') && self.words.length) targets = self.words;
         if (!targets && splitType.includes('lines') && self.lines.length) targets = self.lines;
-        if (!targets) targets = self.chars || self.words || self.lines; // Fallback
+        if (!targets) targets = self.chars || self.words || self.lines;
       };
 
       const splitInstance = new GSAPSplitText(el, {
@@ -85,36 +85,35 @@ const SplitText = ({
         charsClass: 'split-char',
         reduceWhiteSpace: false,
         onSplit: self => {
-          assignTargets(self); // Assign targets after splitting
+          assignTargets(self);
           return gsap.fromTo(
             targets,
-            { ...from }, // Start from these properties
+            { ...from },
             {
-              ...to, // Animate to these properties
+              ...to,
               duration,
               ease,
-              stagger: delay / 1000, // Convert delay to seconds for GSAP
+              stagger: delay / 1000,
               scrollTrigger: {
                 trigger: el,
                 start,
-                once: true, // Only animate once
+                once: true,
                 fastScrollEnd: true,
                 anticipatePin: 0.4
               },
               onComplete: () => {
                 animationCompletedRef.current = true;
-                onLetterAnimationComplete?.(); // Call callback if provided
+                onLetterAnimationComplete?.();
               },
-              willChange: 'transform, opacity', // Performance hint
-              force3D: true // Performance hint
+              willChange: 'transform, opacity',
+              force3D: true
             }
           );
         }
       });
-      el._rbsplitInstance = splitInstance; // Store instance for cleanup
+      el._rbsplitInstance = splitInstance;
 
       return () => {
-        // Cleanup ScrollTriggers and SplitText instance on unmount
         ScrollTrigger.getAll().forEach(st => {
           if (st.trigger === el) st.kill();
         });
@@ -127,7 +126,6 @@ const SplitText = ({
       };
     },
     {
-      // Dependencies for useGSAP to re-run
       dependencies: [
         text,
         delay,
@@ -141,7 +139,7 @@ const SplitText = ({
         fontsLoaded,
         onLetterAnimationComplete
       ],
-      scope: ref // Scope GSAP to the ref
+      scope: ref
     }
   );
 
@@ -149,10 +147,8 @@ const SplitText = ({
     const style = {
       textAlign,
       wordWrap: 'break-word',
-      willChange: 'transform, opacity' // Performance hint
+      willChange: 'transform, opacity'
     };
-    // Ensure `split-parent` and `overflow-hidden` are applied to the wrapping element
-    // `inline-block` and `whitespace-normal` help with proper splitting
     const classes = `split-parent overflow-hidden inline-block whitespace-normal ${className}`;
     switch (tag) {
       case 'h1':
