@@ -138,6 +138,27 @@ export default function Header() {
               <span className="block w-6 h-0.5 bg-nour-dark-text absolute left-0 bottom-0.5"></span>
             </button>
           </div>
+          <div className="flex-grow flex items-center justify-end">                
+            <ul className="flex list-none m-0 p-0 space-x-4">
+                  <li>
+                    <Link href="/account" className="text-nour-dark-text hover:text-nour-deep-olive transition-colors duration-300">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="12" cy="17.5" rx="7" ry="3.5" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+                        <circle cx="12" cy="7" r="4" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+                      </svg>
+                      <span className="sr-only">Account</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/cart" className="text-nour-dark-text hover:text-nour-deep-olive transition-colors duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23.998" height="19.943" viewBox="0 0 23.998 19.943" fill="currentColor">
+                        <path d="M17522.488,7115.44a.784.784,0,0,1-.766-.625l-2.217-10.716h-.412a.781.781,0,1,1,0-1.562h2.643c.016-.047.035-.1.057-.145l3.125-6.452a.78.78,0,1,1,1.4.681l-2.865,5.916h13.7l-2.865-5.916a.783.783,0,0,1,1.41-.681l3.125,6.452a.8.8,0,0,1,.051.145h2.648a.781.781,0,0,1,0,1.563h-.416l-2.215,10.716a.788.788,0,0,1-.77.625Zm.637-1.565h14.365l2.025-9.775H17521.1Zm10.313-3.253v-3.783a.781.781,0,1,1,1.563,0v3.783a.781.781,0,0,1-1.562,0Zm-3.912,0v-3.783a.782.782,0,1,1,1.564,0v3.783a.782.782,0,0,1-1.564,0Zm-3.908,0v-3.783a.781.781,0,1,1,1.563,0v3.783a.781.781,0,0,1-1.562,0Z" transform="translate(-17518.311 -7095.497)" />
+                      </svg>
+                      <span className="sr-only">Cart</span>
+                    </Link>
+                  </li>
+                </ul>
+          </div>
 
           {/* NOURA Logo for Mobile - Always centered for mobile */}
           <div className="absolute left-1/2  -translate-x-1/2 pt-4">
