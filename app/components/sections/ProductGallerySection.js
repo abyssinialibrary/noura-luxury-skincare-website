@@ -17,52 +17,52 @@ export default function ProductGallerySection() {
       id: 1,
       imageSrc: '/brand-assets/nour-float-1.jpg',
       title: 'Nourish & Glow Serum',
-      price: '$65.00', // Added price
+      price: 'birr 65.00', // Added price
       description: 'A potent blend for radiant skin. Experience the transformative power of our Nourish & Glow Serum, meticulously crafted with botanical extracts and essential vitamins.',
       cta: 'View Product',
       ctaLink: '/product/nourish-glow-serum',
     },
     {
       id: 2,
-      imageSrc: '/brand-assets/nour-float-2.jpg',
+      imageSrc: '/brand-assets/nour-float-3.jpg',
       title: 'Balancing Cleansing Oil',
-      price: '$48.00', // Added price
+      price: 'birr 48.00', // Added price
       description: 'Gently purifies, maintains harmony. Our Balancing Cleansing Oil effortlessly dissolves impurities and makeup without stripping your skin\'s natural moisture.',
       cta: 'View Product',
       ctaLink: '/product/balancing-cleansing-oil',
     },
     {
       id: 3,
-      imageSrc: '/brand-assets/nour-float-3.jpg',
+      imageSrc: '/brand-assets/nour-night-cream.jpg',
       title: 'Replenishing Night Cream',
-      price: '$72.00', // Added price
+      price: 'birr 72.00', // Added price
       description: 'Restorative care for overnight renewal. Awaken to revitalized skin with our Replenishing Night Cream, rich in antioxidants and essential fatty acids.',
       cta: 'View Product',
       ctaLink: '/product/replenishing-night-cream',
     },
     {
       id: 4,
-      imageSrc: '/brand-assets/nour-float-1.jpg',
+      imageSrc: '/brand-assets/hydration-mist.jpg',
       title: 'Pure Hydration Mist',
-      price: '$35.00', // Added price
+      price: 'birr 35.00', // Added price
       description: 'A refreshing veil of moisture. Spritz your way to instant refreshment with our Pure Hydration Mist, formulated with mineral-rich waters and calming botanicals.',
       cta: 'View Product',
       ctaLink: '/product/pure-hydration-mist',
     },
     {
       id: 5,
-      imageSrc: '/brand-assets/nour-float-2.jpg',
+      imageSrc: '/brand-assets/exfoliating-polish.jpg',
       title: 'Gentle Exfoliating Polish',
-      price: '$55.00', // Added price
+      price: 'birr 55.00', // Added price
       description: 'Refine and renew for a smooth canvas. Fine, biodegradable particles delicately buff away dead skin cells, promoting cellular renewal without irritation.',
       cta: 'View Product',
       ctaLink: '/product/gentle-exfoliating-polish',
     },
     {
       id: 6,
-      imageSrc: '/brand-assets/nour-float-3.jpg',
+      imageSrc: '/brand-assets/eye-concentrate.jpg',
       title: 'Radiant Eye Concentrate',
-      price: '$88.00', // Added price
+      price: 'birr 88.00', // Added price
       description: 'Brightens and revitalizes delicate eyes. This lightweight yet powerful formula diminishes the appearance of dark circles, puffiness, and fine lines.',
       cta: 'View Product',
       ctaLink: '/product/radiant-eye-concentrate',

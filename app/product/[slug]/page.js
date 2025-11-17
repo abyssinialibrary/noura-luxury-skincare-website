@@ -11,7 +11,7 @@ const allProductsData = [
     slug: 'nourish-glow-serum',
     imageSrc: '/brand-assets/nour-float-1.jpg',
     title: 'Nourish & Glow Serum',
-    price: '$65.00',
+    price: 'birr 65.00',
     shortDescription: 'A potent blend for radiant skin, deeply hydrates.',
     longDescription: 'Experience the transformative power of our Nourish & Glow Serum, meticulously crafted with botanical extracts and essential vitamins. It deeply hydrates, brightens, and reduces fine lines for a luminous complexion. Apply morning and night as part of your ritual for optimal results. Its lightweight texture absorbs quickly, leaving your skin feeling supple and looking luminous. Enriched with Hyaluronic Acid for moisture retention and Vitamin C for brightening.',
     benefits: [
@@ -29,9 +29,9 @@ const allProductsData = [
   {
     id: 2,
     slug: 'balancing-cleansing-oil',
-    imageSrc: '/brand-assets/nour-float-2.jpg',
+    imageSrc: '/brand-assets/nour-float-3.jpg',
     title: 'Balancing Cleansing Oil',
-    price: '$48.00',
+    price: 'birr 48.00',
     shortDescription: 'Gently purifies, maintains skin harmony.',
     longDescription: 'Our Balancing Cleansing Oil effortlessly dissolves impurities and makeup without stripping your skin\'s natural moisture. Infused with soothing oils like Chamomile and Lavender, it leaves your skin feeling clean, soft, and perfectly balanced, ready for the next step in your NOURA ritual. Suitable for all skin types, including sensitive skin.',
     benefits: [
@@ -49,9 +49,9 @@ const allProductsData = [
   {
     id: 3,
     slug: 'replenishing-night-cream',
-    imageSrc: '/brand-assets/nour-float-3.jpg',
+    imageSrc: '/brand-assets/nour-night-cream.jpg',
     title: 'Replenishing Night Cream',
-    price: '$72.00',
+    price: 'birr 72.00',
     shortDescription: 'Restorative care for overnight renewal.',
     longDescription: 'Awaken to revitalized skin with our Replenishing Night Cream. Rich in antioxidants and essential fatty acids, it supports your skin\'s natural repair process, deeply moisturizing and restoring suppleness. A luxurious finish to your evening ritual, promoting cell regeneration while you sleep.',
     benefits: [
@@ -69,9 +69,9 @@ const allProductsData = [
   {
     id: 4,
     slug: 'pure-hydration-mist',
-    imageSrc: '/brand-assets/nour-float-1.jpg',
+    imageSrc: '/brand-assets/hydration-mist.jpg',
     title: 'Pure Hydration Mist',
-    price: '$35.00',
+    price: 'birr 35.00',
     shortDescription: 'A refreshing veil of moisture, revitalizes instantly.',
     longDescription: 'Spritz your way to instant refreshment with our Pure Hydration Mist. Formulated with mineral-rich waters and calming botanicals like Rose and Cucumber, it preps your skin for serums, sets makeup, or simply revitalizes throughout the day. Your skin\'s daily sip of calm and hydration.',
     benefits: [
@@ -89,9 +89,9 @@ const allProductsData = [
   {
     id: 5,
     slug: 'gentle-exfoliating-polish',
-    imageSrc: '/brand-assets/nour-float-2.jpg',
+    imageSrc: '/brand-assets/exfoliating-polish.jpg',
     title: 'Gentle Exfoliating Polish',
-    price: '$55.00',
+    price: 'birr 55.00',
     shortDescription: 'Refine and renew for a smooth canvas.',
     longDescription: 'Reveal a brighter, smoother complexion with our Gentle Exfoliating Polish. Fine, biodegradable particles delicately buff away dead skin cells, promoting cellular renewal without irritation. Use once or twice weekly for optimal results to unveil fresh, glowing skin. Enriched with fruit enzymes for a gentle chemical exfoliation as well.',
     benefits: [
@@ -109,9 +109,9 @@ const allProductsData = [
   {
     id: 6,
     slug: 'radiant-eye-concentrate',
-    imageSrc: '/brand-assets/nour-float-3.jpg',
+    imageSrc: '/brand-assets/eye-concentrate.jpg',
     title: 'Radiant Eye Concentrate',
-    price: '$88.00',
+    price: 'birr 88.00',
     shortDescription: 'Brightens and revitalizes delicate eyes.',
     longDescription: 'Target the delicate skin around your eyes with our Radiant Eye Concentrate. This lightweight yet powerful formula diminishes the appearance of dark circles, puffiness, and fine lines, leaving your eyes looking refreshed and youthful. A vital step for focused care, infused with caffeine to reduce morning puffiness and peptides for firming.',
     benefits: [
@@ -129,9 +129,9 @@ const allProductsData = [
   {
     id: 7,
     slug: 'botanical-face-elixir',
-    imageSrc: '/brand-assets/nour-float-1.jpg',
+    imageSrc: '/brand-assets/face-elixir.jpg',
     title: 'Botanical Face Elixir',
-    price: '$95.00',
+    price: 'birr 95.00',
     shortDescription: 'A luxurious oil blend for deep nourishment.',
     longDescription: 'Infused with rare botanical oils like Argan, Squalane, and Meadowfoam, our Face Elixir deeply nourishes and restores skin vitality. It absorbs quickly, leaving a luminous, non-greasy finish. Ideal for enhancing glow, elasticity, and providing a protective barrier against environmental damage. A few drops are all you need for an indulgent experience.',
     benefits: [
@@ -149,9 +149,9 @@ const allProductsData = [
   {
     id: 8,
     slug: 'mineral-sun-shield',
-    imageSrc: '/brand-assets/nour-float-2.jpg',
+    imageSrc: '/brand-assets/sun-shield.jpg',
     title: 'Mineral Sun Shield SPF 30',
-    price: '$42.00',
+    price: 'birr 42.00',
     shortDescription: 'Lightweight, broad-spectrum sun protection.',
     longDescription: 'Protect your skin daily with our Mineral Sun Shield. This non-nano zinc oxide formula offers broad-spectrum SPF 30 protection without a white cast. Hydrating and gentle for all skin types, it blends seamlessly under makeup for invisible defense against UV rays. Water-resistant for up to 40 minutes.',
     benefits: [
@@ -169,9 +169,9 @@ const allProductsData = [
   {
     id: 9,
     slug: 'clay-purifying-mask',
-    imageSrc: '/brand-assets/nour-float-3.jpg',
+    imageSrc: '/brand-assets/clay-purifying-mask.jpg',
     title: 'Clay Purifying Mask',
-    price: '$38.00',
+    price: 'birr 38.00',
     shortDescription: 'Detoxify and refine pores naturally.',
     longDescription: 'Our Clay Purifying Mask draws out impurities and excess oil, leaving skin feeling fresh and refined. Enriched with calming botanicals like Calendula and Green Tea Extract to prevent over-drying, it helps minimize the appearance of pores and promotes a clearer complexion. Experience a spa-like detox at home.',
     benefits: [
@@ -189,9 +189,9 @@ const allProductsData = [
   {
     id: 10,
     slug: 'lip-eye-balm',
-    imageSrc: '/brand-assets/nour-float-1.jpg',
+    imageSrc: '/brand-assets/lip-eye-balm.jpg',
     title: 'Lip & Eye Balm',
-    price: '$28.00',
+    price: 'birr 28.00',
     shortDescription: 'Targeted hydration for delicate areas.',
     longDescription: 'A concentrated balm to intensely hydrate and protect the delicate skin around the lips and eyes. Reduces fine lines, dryness, and supports skin elasticity for a smoother, more youthful look. Rich in nourishing butters and waxes, it forms a protective barrier against moisture loss. Perfect for on-the-go hydration.',
     benefits: [
