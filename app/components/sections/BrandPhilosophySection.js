@@ -68,22 +68,17 @@ export default function BrandPhilosophySection() {
         />
 
         <p ref={paragraphRef} className="font-sans text-lg md:text-xl text-center text-nour-dark-text mt-8 max-w-3xl mx-auto opacity-80">
-          We craft an identity system that feels serene and intelligent,
-          celebrating slowness, presence, and the art of intentional care.
-          Our mark, inspired by the swan — a universal symbol of elegance, purity, and grace —
-          abstractly housed in a soft capsule shape, suggests reflection and flow.
-          Paired with a modern sans-serif wordmark, our system communicates quiet confidence.
-          NOURA is designed for the discerning minimalist, those who seek balance, stillness, and purpose in every detail.
+          NOURA invites you to slow down and reconnect with your senses. Each product is crafted not only for its efficacy but for the experience it provides, offering a moment of clarity and calm in a world that moves too quickly. Inspired by elemental beauty and quiet rituals, NOURA seeks to cultivate a sense of intentional care that transcends function, transforming skincare into a serene, nourishing practice. With every touch, NOURA empowers you to embrace the art of presence, allowing you to restore your body and mind with thoughtful simplicity and quiet sophistication.
         </p>
 
         {/* New dedicated image section */}
         <div className="flex justify-center flex-wrap gap-6 mt-16">
-          <div ref={el => (imageRefs.current[0] = el)} className="relative w-48 h-48 md:w-64 md:h-64 overflow-hidden rounded-lg shadow-lg">
+          <div ref={el => (imageRefs.current[0] = el)} className="relative w-full h-48 md:w-64 md:h-64 overflow-hidden rounded-lg shadow-lg">
             <Image
-              src="/brand-assets/noura-philosophy-1.jpg"
+              src="/brand-assets/new-banner-image.jpg"
               alt="Skincare texture detail"
               fill
-              sizes="(max-width: 768px) 50vw, 25vw"
+              sizes="(width: full) 50vw, 25vw"
               className="object-cover"
               loading="lazy"
             />
