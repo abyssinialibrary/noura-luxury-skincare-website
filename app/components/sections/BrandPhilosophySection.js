@@ -73,12 +73,12 @@ export default function BrandPhilosophySection() {
 
         {/* New dedicated image section */}
         <div className="flex justify-center flex-wrap gap-6 mt-16">
-          <div ref={el => (imageRefs.current[0] = el)} className="relative w-full h-48 md:w-64 md:h-64 overflow-hidden rounded-lg shadow-lg">
+          <div ref={el => (imageRefs.current[0] = el)} className="relative w-full h-80 md:w-64 md:h-64 overflow-hidden rounded-lg shadow-lg">
             <Image
-              src="/brand-assets/new-banner-image.jpg"
+              src="/brand-assets/noura-philosophy-1.jpg"
               alt="Skincare texture detail"
               fill
-              sizes="(width: full) 50vw, 25vw"
+              sizes="(width: full) 100vw"
               className="object-cover"
               loading="lazy"
             />
