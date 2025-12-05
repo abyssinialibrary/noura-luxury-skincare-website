@@ -90,12 +90,12 @@ export default function Header() {
             <Link href="/" className="flex flex-col items-center justify-center bg-nour-terracotta-gold rounded-b-[20px] px-8 pt-2 pb-4 shadow-xl">
               {/* --- CRITICAL FIX: Replaced SVG with Image component for Desktop Logo --- */}
               <Image
-                src="/brand-assets/noura-logo-full.svg" {/* IMPORTANT: Replace with your actual full NOURA logo SVG path */}
+                src="/brand-assets/noura-logo-full.svg" 
                 alt="NOURA Logo"
-                width={120}  {/* Adjust width as needed */}
-                height={40} {/* Adjust height as needed */}
+                width={120}  
+                height={40} 
                 priority
-                className="h-8 w-auto text-nour-bone-white" {/* Adjust sizing and color if SVG uses currentColor */}
+                className="h-8 w-auto text-nour-bone-white" 
               />
               {/* --- END CRITICAL FIX --- */}
               <span className="sr-only">NOURA</span>
@@ -170,12 +170,12 @@ export default function Header() {
             <Link href="/">
               {/* --- CRITICAL FIX: Replaced SVG with Image component for Mobile Logo --- */}
               <Image
-                src="/brand-assets/noura-logo-full.svg" {/* IMPORTANT: Replace with your actual full NOURA logo SVG path */}
+                src="/brand-assets/noura-logo-full.svg" 
                 alt="NOURA Logo"
-                width={100}  {/* Adjust width for mobile as needed */}
-                height={30} {/* Adjust height for mobile as needed */}
+                width={100}  
+                height={30} 
                 priority
-                className="h-7 w-auto text-nour-deep-olive" {/* Adjust sizing and color if SVG uses currentColor */}
+                className="h-7 w-auto text-nour-deep-olive" 
               />
               {/* --- END CRITICAL FIX --- */}
               <span className="sr-only">NOURA</span>
