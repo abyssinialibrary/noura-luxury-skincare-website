@@ -80,7 +80,7 @@ export default function Footer() {
           <p className="font-sans text-sm opacity-70 mb-4 md:mb-0">© {new Date().getFullYear()} NOURA. All rights reserved.</p>
           <ul className="flex justify-center md:justify-end space-x-6 text-sm">
             <li><AnimatedLink href="/privacy-policy" className="small">Privacy Policy</AnimatedLink></li>
-            <li><AnimatedLink href="/terms-of-use" className="small">Terms of Service</AnimatedLink></li>
+            <li><AnimatedLink href="/terms-of-use" className="small">Tms of Service</AnimatedLink></li>
             <li><AnimatedExternalLink href="https://arkeon-studio.vercel.app" className="small">Site by Arkeon</AnimatedExternalLink></li>
           </ul>
         </div>
