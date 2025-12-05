@@ -6,6 +6,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitText from '../components/ui/SplitText'; // Adjust path if necessary
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function CartPage() {
   const pageRef = useRef(null);

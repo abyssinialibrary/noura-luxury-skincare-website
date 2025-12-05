@@ -6,6 +6,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitText from '../components/ui/SplitText';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function LearnPage() {
   const pageRef = useRef(null);

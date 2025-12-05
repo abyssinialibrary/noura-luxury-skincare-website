@@ -3,6 +3,7 @@
 
 import ProductDetailClient from './ProductDetailClient';
 import Link from 'next/link'; // <--- CRITICAL FIX: ADD THIS IMPORT
+import Image from 'next/image';
 
 // --- Product Data (Defined here in the Server Component scope) ---
 const allProductsData = [

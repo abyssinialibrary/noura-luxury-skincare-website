@@ -4,6 +4,7 @@
 import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Image from 'next/image';
 
 import HeroSection from './components/sections/HeroSection';
 import BrandPhilosophySection from './components/sections/BrandPhilosophySection';

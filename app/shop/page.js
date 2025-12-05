@@ -6,6 +6,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitText from '../components/ui/SplitText';
 import ShopProductCard from '../components/ui/ShopProductCard';
+import Image from 'next/image';
 
 export default function ShopPage() {
   const pageRef = useRef(null); // Ref for the main page container

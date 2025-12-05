@@ -5,6 +5,7 @@ import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitText from '../components/ui/SplitText'; // Adjust path if necessary
+import Image from 'next/image';
 
 export default function PrivacyPolicyPage() {
   const pageRef = useRef(null);

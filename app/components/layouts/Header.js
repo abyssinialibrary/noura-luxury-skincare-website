@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useState, useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import BodyClassManager from '../utils/BodyClassManager'; // Still needed for body overflow
+import Image from 'next/image';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
