@@ -23,6 +23,10 @@ const sora = Sora({
 export const metadata = {
   title: 'NOURA - Light Lives in Ritual',
   description: 'NOURA is a luxury skincare line inspired by elemental beauty and quiet rituals, designed for balance, stillness, and purpose.',
+
+  icons: {
+    icon: '/brand-assets/favicon.svg', // Path to your SVG favicon
+  }
 };
 
 export default function RootLayout({ children }) {

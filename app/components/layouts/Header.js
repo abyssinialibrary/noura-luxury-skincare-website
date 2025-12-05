@@ -87,13 +87,17 @@ export default function Header() {
 
           {/* NOURA Logo - Absolute position for "hanging" effect */}
           <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 z-50 pl-6"> {/* Adjusted top for hanging effect and fine-tuned position */}
-            <Link href="/" className="flex flex-col items-center justify-center bg-nour-dark/80 backdrop-blur-md rounded-b-[20px] pl-9 pr-7 py-3 shadow-xl">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45" className="h-10 w-auto text-nour-bone-white"> {/* Changed text color for contrast */}
-                  <g className="logo-icon" transform="translate(-24.72 -24.46)">
-                    <path d="M7296.14-10581.615v0l7.868-6.383a10.128,10.128,0,0,1-1.488,14.251l0,0-7.868,6.38A10.137,10.137,0,0,1,7296.14-10581.615Z" transform="translate(-7264.877 10612.461)" fill="currentColor"/>
-                    <path d="M7296.323-10572.27a33.968,33.968,0,0,1-3.869-.6.077.077,0,0,1-.032-.135c.059-.051.138-.12.236-.21l.609-.519c.741-.638,1.854-1.584,3.175-2.694.476-.4.98-.829,1.515-1.272,2.314-1.927,5.03-4.146,7.451-6.027.415-.324.832-.638,1.233-.933l.236-.178v-.014l.1-.074a31.3,31.3,0,0,1,3.933-2.636c.032-.014.062-.043.09-.059a3.389,3.389,0,0,1,2.2-.327,5.106,5.106,0,0,1,1.36.45h0l2.227,1.018c.191.088.12.486-.085.54a2.975,2.975,0,0,0-2.27,2.474l.005-.166a14.774,14.774,0,0,1-1,3.487c-.165.386-.343.758-.534,1.127a.015.015,0,0,0-.016.016,12.9,12.9,0,0,1-3.295,3.98c-2.82,2.3-6.809,2.9-10.241,2.9C7298.269-10572.124,7297.242-10572.184,7296.323-10572.27Z" transform="translate(-7267.675 10623.668)" fill="currentColor"/>
-                  </g>
-              </svg>
+            <Link href="/" className="flex flex-col items-center justify-center bg-nour-terracotta-gold rounded-b-[20px] px-8 pt-2 pb-4 shadow-xl">
+              {/* --- CRITICAL FIX: Replaced SVG with Image component for Desktop Logo --- */}
+              <Image
+                src="/brand-assets/noura-logo-full.svg" {/* IMPORTANT: Replace with your actual full NOURA logo SVG path */}
+                alt="NOURA Logo"
+                width={120}  {/* Adjust width as needed */}
+                height={40} {/* Adjust height as needed */}
+                priority
+                className="h-8 w-auto text-nour-bone-white" {/* Adjust sizing and color if SVG uses currentColor */}
+              />
+              {/* --- END CRITICAL FIX --- */}
               <span className="sr-only">NOURA</span>
             </Link>
           </div>
@@ -162,15 +166,21 @@ export default function Header() {
 
           {/* NOURA Logo for Mobile - Always centered for mobile */}
           <div className="absolute left-1/2  -translate-x-1/2 pt-4">
+            <div className="absolute left-1/2 transform -translate-x-1/2 inset-y-0 flex items-center justify-center"> {/* Adjusted for better vertical centering */}
             <Link href="/">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45" className="h-10 w-auto text-nour-deep-olive">
-                  <g className="logo-icon" transform="translate(-24.72 -24.46)">
-                    <path d="M7296.14-10581.615v0l7.868-6.383a10.128,10.128,0,0,1-1.488,14.251l0,0-7.868,6.38A10.137,10.137,0,0,1,7296.14-10581.615Z" transform="translate(-7264.877 10612.461)" fill="currentColor"/>
-                    <path d="M7296.323-10572.27a33.968,33.968,0,0,1-3.869-.6.077.077,0,0,1-.032-.135c.059-.051.138-.12.236-.21l.609-.519c.741-.638,1.854-1.584,3.175-2.694.476-.4.98-.829,1.515-1.272,2.314-1.927,5.03-4.146,7.451-6.027.415-.324.832-.638,1.233-.933l.236-.178v-.014l.1-.074a31.3,31.3,0,0,1,3.933-2.636c.032-.014.062-.043.09-.059a3.389,3.389,0,0,1,2.2-.327,5.106,5.106,0,0,1,1.36.45h0l2.227,1.018c.191.088.12.486-.085.54a2.975,2.975,0,0,0-2.27,2.474l.005-.166a14.774,14.774,0,0,1-1,3.487c-.165.386-.343.758-.534,1.127a.015.015,0,0,0-.016.016,12.9,12.9,0,0,1-3.295,3.98c-2.82,2.3-6.809,2.9-10.241,2.9C7298.269-10572.124,7297.242-10572.184,7296.323-10572.27Z" transform="translate(-7267.675 10623.668)" fill="currentColor"/>
-                  </g>
-              </svg>
+              {/* --- CRITICAL FIX: Replaced SVG with Image component for Mobile Logo --- */}
+              <Image
+                src="/brand-assets/noura-logo-full.svg" {/* IMPORTANT: Replace with your actual full NOURA logo SVG path */}
+                alt="NOURA Logo"
+                width={100}  {/* Adjust width for mobile as needed */}
+                height={30} {/* Adjust height for mobile as needed */}
+                priority
+                className="h-7 w-auto text-nour-deep-olive" {/* Adjust sizing and color if SVG uses currentColor */}
+              />
+              {/* --- END CRITICAL FIX --- */}
               <span className="sr-only">NOURA</span>
             </Link>
+            </div>
           </div>
           
           {/* Right Navigation (Account and Cart) for Mobile - empty for mobile, pushed by logo */}
